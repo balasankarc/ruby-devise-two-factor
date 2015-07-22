@@ -6,12 +6,15 @@ Uploaders: Balasankar C <balasankarc@autistici.org>
 Build-Depends: debhelper (>= 7.0.50~),
                gem2deb,
                rake,
+               ruby-activemodel,
                ruby-activesupport,
                ruby-attr-encrypted (>= 1.3.2),
                ruby-devise (>= 3.5.0),
+               ruby-faker,
                ruby-railties,
                ruby-rotp (>= 2),
-               ruby-rspec
+               ruby-rspec,
+               ruby-timecop
 Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-devise-two-factor.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-devise-two-factor.git
@@ -31,4 +34,6 @@ Depends: ruby | ruby-interpreter,
          ${misc:Depends},
          ${shlibs:Depends}
 Description: Barebones two-factor authentication with Devise
- Barebones two-factor authentication with Devise
+ Devise-two-factor is a minimalist extension to Devise which offers support for 
+ two-factor authentication, through the TOTP scheme. It allows you to 
+ incorporate two-factor authentication into your existing models.
